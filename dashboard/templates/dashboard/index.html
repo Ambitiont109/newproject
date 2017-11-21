@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> DashBoard</title>
+</head>
+<body>
+	<!-- get keys and values in data dictionary -->
+	{% for key, value in data.items%}	
+	    <h4>{{key}}</h4>
+	    <h6>{{value}}</h6>
+	{% endfor%}
+</body>
+</html>
