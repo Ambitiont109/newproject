@@ -16,7 +16,8 @@ def millify(n):
 
 	return '{:.2f}{}'.format(n / 10**(3 * millidx), millnames[millidx])
 def get_data_from_api(url): # as you can realize from name of method, this gets data from api what you provide.
-	r = requests.get(url,verify='/home/boris/Desktop/ca.crt')
+	r = requests.get(url)
+	# r = requests.get(url,verify='/home/boris/Desktop/ca.crt')
 	if (r.status_code != 200):	#Fail
 		return None
 	dict_data = r.json()		# convert returned value 'r' from requets.get() to Dictionary data. Here r is Json Data.
