@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> DashBoard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.card{
+			width: 18%;
+			margin-left: 5px;
+		}
+		.card-type1{
+			background-color: #404042;
+			border-color: #404042;
+		}
+		.card-type2{
+			background-color: #192163;;
+			border-color: #192163;;
+		}
+		.container{
+			width: 90%;
+			margin: auto;
+		}
+		.my_row{
+			display: flex;
+		}
+		hr {
+		    display: block;
+		    margin-top: 0.5em;
+		    margin-bottom: 0.5em;
+/*		    margin-left: auto;
+		    margin-right: auto;
+		    border-style: inset;
+*/		    border-width: 1px;
+		    border-color: #ff0000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		{% block content %}
+		
+		{% endblock %}		
+	</div>
+</body>
+</html>
